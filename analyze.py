@@ -16,8 +16,10 @@ Reports for each referenced item:
 import re
 import sys
 
+_player     = sys.argv[1] if len(sys.argv) > 1 else "player"
+
 ITEMS_LUA   = r"C:\windower\res\items.lua"
-FINDALL_LUA = r"C:\windower\addons\findAll\data\player.lua"
+FINDALL_LUA = rf"C:\windower\addons\findAll\data\{_player}.lua"
 GEARSWAP    = r"C:\windower\addons\GearSwap\data\thf.lua"
 
 

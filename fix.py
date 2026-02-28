@@ -9,11 +9,7 @@ A backup is written to thf.lua.bak before any changes are made.
 
 import re
 import shutil
-from analyze import parse_items, parse_findall, parse_gearswap
-
-ITEMS_LUA   = r"C:\windower\res\items.lua"
-FINDALL_LUA = r"C:\windower\addons\findAll\data\player.lua"
-GEARSWAP    = r"C:\windower\addons\GearSwap\data\thf.lua"
+from analyze import parse_items, parse_findall, parse_gearswap, ITEMS_LUA, FINDALL_LUA, GEARSWAP
 
 
 def build_corrections(name_to_id, id_to_bags, gear_items):
